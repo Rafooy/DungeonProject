@@ -1,15 +1,68 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=30 format=2]
 
-[ext_resource path="res://tiles.tres" type="TileSet" id=1]
+[ext_resource path="res://dungeonTileSet.tres" type="TileSet" id=1]
 [ext_resource path="res://scenes/Character.gd" type="Script" id=2]
-[ext_resource path="res://sprites/roguelikeChar_transparent.png" type="Texture" id=3]
+[ext_resource path="res://sprites/character_sprites/adventurer-idle-00.png" type="Texture" id=3]
+[ext_resource path="res://sprites/character_sprites/adventurer-idle-01.png" type="Texture" id=4]
+[ext_resource path="res://sprites/character_sprites/adventurer-run-00.png" type="Texture" id=5]
+[ext_resource path="res://sprites/character_sprites/adventurer-run-01.png" type="Texture" id=6]
+[ext_resource path="res://sprites/character_sprites/adventurer-run-02.png" type="Texture" id=7]
+[ext_resource path="res://sprites/character_sprites/adventurer-run-03.png" type="Texture" id=8]
+[ext_resource path="res://sprites/character_sprites/adventurer-run-04.png" type="Texture" id=9]
+[ext_resource path="res://sprites/character_sprites/adventurer-run-05.png" type="Texture" id=10]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack3-00.png" type="Texture" id=11]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack3-01.png" type="Texture" id=12]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack3-02.png" type="Texture" id=13]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack3-03.png" type="Texture" id=14]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack3-04.png" type="Texture" id=15]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack3-05.png" type="Texture" id=16]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack1-00.png" type="Texture" id=17]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack1-01.png" type="Texture" id=18]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack1-02.png" type="Texture" id=19]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack1-03.png" type="Texture" id=20]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack1-04.png" type="Texture" id=21]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack2-00.png" type="Texture" id=22]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack2-01.png" type="Texture" id=23]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack2-02.png" type="Texture" id=24]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack2-03.png" type="Texture" id=25]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack2-04.png" type="Texture" id=26]
+[ext_resource path="res://sprites/character_sprites/adventurer-attack2-05.png" type="Texture" id=27]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 7, 7 )
+radius = 10.0
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "idle",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "running",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "heavyattack",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "lightattack",
+"speed": 12.0
+} ]
 
 [node name="Room" type="Node2D" index="0"]
+
+position = Vector2( 117.954, 64.6987 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -29,31 +82,63 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 65536, 0, 0, 65537, 1, 0, 65538, 1, 0, 65539, 1, 0, 65540, 2, 0, 65541, 0, 0, 65542, 1, 0, 65543, 1, 0, 65544, 0, 0, 131072, 0, 0, 131073, 1, 0, 131074, 1, 0, 131075, 1, 0, 131076, 2, 0, 131077, 0, 0, 131078, 1, 0, 131079, 1, 0, 131080, 0, 0, 196608, 0, 0, 196609, 1, 0, 196610, 1, 0, 196611, 1, 0, 196612, 2, 0, 196613, 0, 0, 196614, 1, 0, 196615, 1, 0, 196616, 0, 0, 262144, 0, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262148, 2, 0, 262149, 0, 0, 262150, 1, 0, 262151, 1, 0, 262152, 0, 0, 327680, 0, 0, 327681, 1, 0, 327682, 1, 0, 327683, 1, 0, 327684, 2, 0, 327685, 1, 0, 327686, 1, 0, 327687, 1, 0, 327688, 0, 0, 393216, 0, 0, 393217, 1, 0, 393218, 1, 0, 393219, 1, 0, 393220, 2, 0, 393221, 1, 0, 393222, 1, 0, 393223, 1, 0, 393224, 0, 0, 458752, 0, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 2, 0, 458757, 0, 0, 458758, 1, 0, 458759, 1, 0, 458760, 0, 0, 524288, 0, 0, 524289, 1, 0, 524290, 1, 0, 524291, 1, 0, 524292, 2, 0, 524293, 0, 0, 524294, 1, 0, 524295, 1, 0, 524296, 0, 0, 589824, 0, 0, 589825, 1, 0, 589826, 1, 0, 589827, 1, 0, 589828, 2, 0, 589829, 0, 0, 589830, 1, 0, 589831, 1, 0, 589832, 0, 0, 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0 )
+tile_data = PoolIntArray( -196612, 1, 0, -196611, 1, 0, -196610, 1, 0, -196609, 1, 0, -262144, 1, 0, -262143, 1, 0, -262142, 1, 0, -262141, 1, 0, -262140, 1, 0, -262139, 1, 0, -131076, 1, 0, -131075, 529, 0, -131074, 529, 0, -131073, 529, 0, -196608, 529, 0, -196607, 529, 0, -196606, 526, 0, -196605, 529, 0, -196604, 529, 0, -196603, 1, 0, -65540, 1, 0, -65539, 529, 0, -65538, 529, 0, -65537, 529, 0, -131072, 529, 0, -131071, 529, 0, -131070, 526, 0, -131069, 529, 0, -131068, 529, 0, -131067, 1, 0, -4, 1, 0, -3, 529, 0, -2, 529, 0, -1, 529, 0, -65536, 529, 0, -65535, 529, 0, -65534, 526, 0, -65533, 529, 0, -65532, 529, 0, -65531, 1, 0, 65532, 1, 0, 65533, 529, 0, 65534, 529, 0, 65535, 529, 0, 0, 529, 0, 1, 529, 0, 2, 529, 0, 3, 529, 0, 4, 529, 0, 5, 1, 0, 131068, 1, 0, 131069, 529, 0, 131070, 529, 0, 131071, 529, 0, 65536, 529, 0, 65537, 529, 0, 65538, 529, 0, 65539, 529, 0, 65540, 529, 0, 65541, 1, 0, 196604, 1, 0, 196605, 529, 0, 196606, 529, 0, 196607, 529, 0, 131072, 529, 0, 131073, 529, 0, 131074, 526, 0, 131075, 529, 0, 131076, 529, 0, 131077, 1, 0, 262140, 1, 0, 262141, 529, 0, 262142, 529, 0, 262143, 529, 0, 196608, 529, 0, 196609, 529, 0, 196610, 526, 0, 196611, 529, 0, 196612, 529, 0, 196613, 1, 0, 327676, 1, 0, 327677, 1, 0, 327678, 1, 0, 327679, 1, 0, 262144, 1, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262148, 1, 0, 262149, 1, 0 )
 _sections_unfolded = [ "Cell" ]
 
 [node name="Character" type="KinematicBody2D" parent="." index="1"]
 
-position = Vector2( 44, 40 )
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_group_": true
 }
-speed = 200
+speed = 100
 
-[node name="CharacterSprite" type="Sprite" parent="Character" index="0"]
+[node name="CharacterCollision" type="CollisionShape2D" parent="Character" index="0"]
 
-texture = ExtResource( 3 )
-region_enabled = true
-region_rect = Rect2( 0, 0, 12, 14 )
-_sections_unfolded = [ "Region" ]
-
-[node name="CharacterCollision" type="CollisionShape2D" parent="Character" index="1"]
-
+position = Vector2( -0.280647, 2.725 )
+scale = Vector2( 1.00421, 1.67799 )
 shape = SubResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="Character" index="1"]
+
+position = Vector2( -1.1911, 4.53056 )
+scale = Vector2( 2, 2 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 0.25, 0.25 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = false
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Drag Margin" ]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Character" index="2"]
+
+frames = SubResource( 2 )
+animation = "heavyattack"
+frame = 4
+playing = true
 
 
