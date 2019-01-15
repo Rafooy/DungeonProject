@@ -186,7 +186,6 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent7" type="Sprite" parent="." index="7"]
 
-editor/display_folded = true
 position = Vector2( 119, 0 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -194,21 +193,6 @@ hframes = 30
 frame = 7
 region_enabled = true
 region_rect = Rect2( 119, 0, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent7" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent7/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent8" type="Sprite" parent="." index="8"]
 
@@ -942,21 +926,6 @@ frame = 36
 region_enabled = true
 region_rect = Rect2( 119, 17, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent36" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent36/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent37" type="Sprite" parent="." index="37"]
 
 position = Vector2( 136, 17 )
@@ -984,6 +953,7 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent38" type="Sprite" parent="." index="38"]
 
+editor/display_folded = true
 position = Vector2( 153, 17 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -1592,21 +1562,6 @@ frame = 62
 region_enabled = true
 region_rect = Rect2( 68, 34, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent62" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent62/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent63" type="Sprite" parent="." index="63"]
 
 position = Vector2( 85, 34 )
@@ -1642,21 +1597,6 @@ frame = 64
 region_enabled = true
 region_rect = Rect2( 102, 34, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent64" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent64/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent65" type="Sprite" parent="." index="65"]
 
 position = Vector2( 119, 34 )
@@ -1666,21 +1606,6 @@ hframes = 30
 frame = 65
 region_enabled = true
 region_rect = Rect2( 119, 34, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent65" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent65/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="grayfloor" type="Sprite" parent="." index="66"]
 
@@ -2158,21 +2083,6 @@ frame = 87
 region_enabled = true
 region_rect = Rect2( 0, 51, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent87" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent87/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent88" type="Sprite" parent="." index="88"]
 
 position = Vector2( 17, 51 )
@@ -2182,21 +2092,6 @@ hframes = 30
 frame = 88
 region_enabled = true
 region_rect = Rect2( 17, 51, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent88" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent88/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent89" type="Sprite" parent="." index="89"]
 
@@ -2208,21 +2103,6 @@ frame = 89
 region_enabled = true
 region_rect = Rect2( 34, 51, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent89" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent89/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent90" type="Sprite" parent="." index="90"]
 
 position = Vector2( 51, 51 )
@@ -2232,21 +2112,6 @@ hframes = 30
 frame = 90
 region_enabled = true
 region_rect = Rect2( 51, 51, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent90" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent90/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent91" type="Sprite" parent="." index="91"]
 
@@ -2883,21 +2748,6 @@ frame = 116
 region_enabled = true
 region_rect = Rect2( 0, 68, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent116" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent116/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent117" type="Sprite" parent="." index="117"]
 
 position = Vector2( 17, 68 )
@@ -2907,21 +2757,6 @@ hframes = 30
 frame = 117
 region_enabled = true
 region_rect = Rect2( 17, 68, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent117" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent117/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent118" type="Sprite" parent="." index="118"]
 
@@ -2933,21 +2768,6 @@ frame = 118
 region_enabled = true
 region_rect = Rect2( 34, 68, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent118" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent118/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent119" type="Sprite" parent="." index="119"]
 
 position = Vector2( 51, 68 )
@@ -2957,21 +2777,6 @@ hframes = 30
 frame = 119
 region_enabled = true
 region_rect = Rect2( 51, 68, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent119" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent119/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent120" type="Sprite" parent="." index="120"]
 
@@ -7152,6 +6957,7 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent287" type="Sprite" parent="." index="287"]
 
+editor/display_folded = true
 position = Vector2( 442, 153 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -7177,6 +6983,7 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent288" type="Sprite" parent="." index="288"]
 
+editor/display_folded = true
 position = Vector2( 459, 153 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -7202,6 +7009,7 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent289" type="Sprite" parent="." index="289"]
 
+editor/display_folded = true
 position = Vector2( 476, 153 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -7225,7 +7033,7 @@ bounce = 0.0
 build_mode = 0
 polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
-[node name="roguelikeDungeon_transparent290" type="Sprite" parent="." index="290"]
+[node name="ice_floor_1_1" type="Sprite" parent="." index="290"]
 
 position = Vector2( 0, 170 )
 texture = ExtResource( 1 )
@@ -7235,22 +7043,7 @@ frame = 290
 region_enabled = true
 region_rect = Rect2( 0, 170, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent290" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent290/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
-[node name="roguelikeDungeon_transparent291" type="Sprite" parent="." index="291"]
+[node name="ice_floor_1_2" type="Sprite" parent="." index="291"]
 
 position = Vector2( 17, 170 )
 texture = ExtResource( 1 )
@@ -7260,22 +7053,7 @@ frame = 291
 region_enabled = true
 region_rect = Rect2( 17, 170, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent291" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent291/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
-[node name="roguelikeDungeon_transparent292" type="Sprite" parent="." index="292"]
+[node name="ice_floor_1_3" type="Sprite" parent="." index="292"]
 
 position = Vector2( 34, 170 )
 texture = ExtResource( 1 )
@@ -7284,21 +7062,6 @@ hframes = 30
 frame = 292
 region_enabled = true
 region_rect = Rect2( 34, 170, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent292" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent292/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent293" type="Sprite" parent="." index="293"]
 
@@ -7635,21 +7398,6 @@ frame = 306
 region_enabled = true
 region_rect = Rect2( 272, 170, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent306" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent306/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent307" type="Sprite" parent="." index="307"]
 
 position = Vector2( 289, 170 )
@@ -7659,21 +7407,6 @@ hframes = 30
 frame = 307
 region_enabled = true
 region_rect = Rect2( 289, 170, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent307" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent307/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent308" type="Sprite" parent="." index="308"]
 
@@ -7685,21 +7418,6 @@ frame = 308
 region_enabled = true
 region_rect = Rect2( 306, 170, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent308" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent308/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent309" type="Sprite" parent="." index="309"]
 
 position = Vector2( 323, 170 )
@@ -7710,21 +7428,6 @@ frame = 309
 region_enabled = true
 region_rect = Rect2( 323, 170, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent309" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent309/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent310" type="Sprite" parent="." index="310"]
 
 position = Vector2( 340, 170 )
@@ -7734,21 +7437,6 @@ hframes = 30
 frame = 310
 region_enabled = true
 region_rect = Rect2( 340, 170, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent310" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent310/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent311" type="Sprite" parent="." index="311"]
 
@@ -7950,7 +7638,7 @@ bounce = 0.0
 build_mode = 0
 polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
-[node name="roguelikeDungeon_transparent319" type="Sprite" parent="." index="319"]
+[node name="ice_floor_1_4" type="Sprite" parent="." index="319"]
 
 position = Vector2( 0, 187 )
 texture = ExtResource( 1 )
@@ -7960,22 +7648,7 @@ frame = 319
 region_enabled = true
 region_rect = Rect2( 0, 187, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent319" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent319/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
-[node name="roguelikeDungeon_transparent320" type="Sprite" parent="." index="320"]
+[node name="ice_floor_1_5" type="Sprite" parent="." index="320"]
 
 position = Vector2( 17, 187 )
 texture = ExtResource( 1 )
@@ -7985,22 +7658,7 @@ frame = 320
 region_enabled = true
 region_rect = Rect2( 17, 187, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent320" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent320/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
-[node name="roguelikeDungeon_transparent321" type="Sprite" parent="." index="321"]
+[node name="ice_floor_1_6" type="Sprite" parent="." index="321"]
 
 position = Vector2( 34, 187 )
 texture = ExtResource( 1 )
@@ -8009,21 +7667,6 @@ hframes = 30
 frame = 321
 region_enabled = true
 region_rect = Rect2( 34, 187, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent321" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent321/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent322" type="Sprite" parent="." index="322"]
 
@@ -8177,6 +7820,7 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent328" type="Sprite" parent="." index="328"]
 
+editor/display_folded = true
 position = Vector2( 153, 187 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -8202,6 +7846,7 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent329" type="Sprite" parent="." index="329"]
 
+editor/display_folded = true
 position = Vector2( 170, 187 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -8227,6 +7872,7 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent330" type="Sprite" parent="." index="330"]
 
+editor/display_folded = true
 position = Vector2( 187, 187 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -8252,6 +7898,7 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent331" type="Sprite" parent="." index="331"]
 
+editor/display_folded = true
 position = Vector2( 204, 187 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -8277,6 +7924,7 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent332" type="Sprite" parent="." index="332"]
 
+editor/display_folded = true
 position = Vector2( 221, 187 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -8302,6 +7950,7 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent333" type="Sprite" parent="." index="333"]
 
+editor/display_folded = true
 position = Vector2( 238, 187 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -8327,6 +7976,7 @@ polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent334" type="Sprite" parent="." index="334"]
 
+editor/display_folded = true
 position = Vector2( 255, 187 )
 texture = ExtResource( 1 )
 vframes = 19
@@ -8360,21 +8010,6 @@ frame = 335
 region_enabled = true
 region_rect = Rect2( 272, 187, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent335" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent335/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent336" type="Sprite" parent="." index="336"]
 
 position = Vector2( 289, 187 )
@@ -8384,21 +8019,6 @@ hframes = 30
 frame = 336
 region_enabled = true
 region_rect = Rect2( 289, 187, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent336" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent336/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent337" type="Sprite" parent="." index="337"]
 
@@ -8410,21 +8030,6 @@ frame = 337
 region_enabled = true
 region_rect = Rect2( 306, 187, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent337" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent337/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent338" type="Sprite" parent="." index="338"]
 
 position = Vector2( 323, 187 )
@@ -8435,21 +8040,6 @@ frame = 338
 region_enabled = true
 region_rect = Rect2( 323, 187, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent338" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent338/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent339" type="Sprite" parent="." index="339"]
 
 position = Vector2( 340, 187 )
@@ -8459,21 +8049,6 @@ hframes = 30
 frame = 339
 region_enabled = true
 region_rect = Rect2( 340, 187, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent339" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent339/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent340" type="Sprite" parent="." index="340"]
 
@@ -8675,7 +8250,7 @@ bounce = 0.0
 build_mode = 0
 polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
-[node name="roguelikeDungeon_transparent348" type="Sprite" parent="." index="348"]
+[node name="ice_floor_1_7" type="Sprite" parent="." index="348"]
 
 position = Vector2( 0, 204 )
 texture = ExtResource( 1 )
@@ -8685,22 +8260,7 @@ frame = 348
 region_enabled = true
 region_rect = Rect2( 0, 204, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent348" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent348/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
-[node name="roguelikeDungeon_transparent349" type="Sprite" parent="." index="349"]
+[node name="ice_floor_1_8" type="Sprite" parent="." index="349"]
 
 position = Vector2( 17, 204 )
 texture = ExtResource( 1 )
@@ -8709,21 +8269,6 @@ hframes = 30
 frame = 349
 region_enabled = true
 region_rect = Rect2( 17, 204, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent349" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent349/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent350" type="Sprite" parent="." index="350"]
 
@@ -8735,21 +8280,6 @@ frame = 350
 region_enabled = true
 region_rect = Rect2( 34, 204, 16, 16 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent350" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent350/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
-
 [node name="roguelikeDungeon_transparent351" type="Sprite" parent="." index="351"]
 
 position = Vector2( 51, 204 )
@@ -8759,21 +8289,6 @@ hframes = 30
 frame = 351
 region_enabled = true
 region_rect = Rect2( 51, 204, 16, 16 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="roguelikeDungeon_transparent351" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="roguelikeDungeon_transparent351/StaticBody2D" index="0"]
-
-build_mode = 0
-polygon = PoolVector2Array( -8, -8, 8, -8, 8, 8, -8, 8 )
 
 [node name="roguelikeDungeon_transparent352" type="Sprite" parent="." index="352"]
 
