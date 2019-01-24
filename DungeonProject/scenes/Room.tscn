@@ -2,7 +2,7 @@
 
 [ext_resource path="res://scripts/Room.gd" type="Script" id=1]
 
-[node name="Room" type="RigidBody2D" index="0"]
+[node name="Room" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 1

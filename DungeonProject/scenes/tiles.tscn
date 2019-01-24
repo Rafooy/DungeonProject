@@ -2,7 +2,7 @@
 
 [ext_resource path="res://sprites/roguelikeIndoor_transparent.png" type="Texture" id=1]
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 [node name="LongTableLeft" type="Sprite" parent="." index="0"]
 
@@ -1044,7 +1044,6 @@ region_rect = Rect2( 51, 34, 16, 16 )
 
 [node name="HDLongTableBottom" type="Sprite" parent="." index="56"]
 
-editor/display_folded = true
 position = Vector2( 68, 34 )
 texture = ExtResource( 1 )
 vframes = 19
